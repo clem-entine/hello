@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        My Portfolio
+    </title>
+    <link rel="stylesheet" href="style.css">
+
+    <style type=text/css>
+        body {
+            height: 145vh;
+            margin-top: 80px;
+            padding: 30px;
+           
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url('https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTvuLzmA8vvGVY4OItn_eNtlOotHpPzhWRpLuFd3GcLccEO1AzS');
+            /* opacity: 0.1; */
+            font-family: sans-serif;
+            color: #FFFFFF;
+            /* text-align: center; */
+
+
+        }
+
+        header {
+            background-color: rgb(17, 187, 62);
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 5px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 0 25px 0 black;
+        }
+
+        header * {
+            display: inline;
+        }
+
+        header li {
+            margin: 20px;
+        }
+
+        header li a {
+            color: blue;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+   <div class="container">
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Clementine Mvukwe</a>
+                </li>
+                <li>
+                    About me
+                </li>
+                <li>
+                    <a href="contact.html"> Contact </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <h1>A littlt bit more about me</h1>
+
+    <p>I am a 17 year old beginner front end web developer , I enjoy designing , colours and art. In my free time i cook
+        , watch movies , travel and read. Im a netball player, singer and dancer. I enjoy playing online video games and
+        entering competitions.I'm currently taking a gap year from school. My dream job is to work </p>
+    <p><strong><em>I'm Clementine, a front-end web developer currently at younglings. I'm still a beginner but I'm a
+                fast learner. My skills are Delphi , HTML ,CSS and JavaScript.</em></strong></p>
+
+    <Div class="tab-titles">
+        <p class="tab-links active-link" onclick= "opentab('skills')">Skills</p>
+        <p class="tab-links" onclick= "opentab('Experience')">Experience</p>
+        <p class="tab-links"onclick= "opentab('Education')">Education</p>
+        <p class="tab-links"onclick= "opentab('Hobbies')">Hobbies</p>
+    </Div>
+    <div class="tab-contents active-tab" id="skills">
+        <ul>
+            <li><span>C# </span><br>Building applications using DELPHI</li>
+            <li><span>CSS </span><br>Designing/styling programs</li>
+            <li><span>HTML </span><br>Basic HTML </li>
+            <li><span>JavaScript </span><br>Beginner</li>
+
+        </ul>
+    </div>
+
+    <div class="tab-contents" id="Experience">
+        <ul>
+            <li><span> 2019</span><br>Vodacom Code like a girl(CSS, HTML and JS)</li>
+            <li><span>2020-2022 </span><br>Delphi</li>
+            <li><span>2022-present </span><br>CSS, HTML, JavaScript </li>
+            
+        </ul>
+    </div>
+
+    <div class="tab-contents" id="Education">
+        <ul>
+            <li><span>C# </span><br>Building applications using DELPHI</li>
+            <li><span>CSS </span><br>Designing/styling programs</li>
+            <li><span>HTML </span><br>Basic HTML </li>
+            <li><span>JavaScript </span><br>Beginner</li>
+
+        </ul>
+    </div>
+
+    <div class="tab-contents" id="Hobbies">
+        <ul>
+            <li><span>C# </span><br>Building applications using DELPHI</li>
+            <li><span>CSS </span><br>Designing/styling programs</li>
+            <li><span>HTML </span><br>Basic HTML </li>
+            <li><span>JavaScript </span><br>Beginner</li>
+
+        </ul>
+    </div>
+   </div>
+</body>
+
+</html>
