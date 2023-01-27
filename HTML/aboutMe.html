@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/about.css">   
+    </head>
+    
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <div class="logo"><i>Clem</i></div>
+    
+                    <li> 
+                    <a href="index.html">Home</a> 
+                    </li> 
+                    <li> 
+                    <a href="aboutMe.html"> About me </a>  
+                    </li>  
+                    <li>  
+                    <a href="contact.html"> Contact </a>    
+                    </li>  
+                </ul>
+            </nav>
+        </header>
+        <h1>A littlt bit more about me</h1>
+    
+        <p>I am an 18 year old beginner front-end web developer , I enjoy designing , colours and art. In my free time i cook
+            , watch movies , travel and read. Im a netball player, singer and dancer. I enjoy playing online video games and
+            entering competitions.I'm currently taking a gap year from school. My dream job is to work </p>
+        <p>I'm Clementine, a front-end web developer currently at younglings. I'm still a beginner but I'm a
+                    fast learner. My skills are Delphi , HTML ,CSS and JavaScript.</p>
+    
+        <Div class="tab-titles">
+            <p class="tab-links active-link" onclick= "opentab('skills')">Skills</p>
+            <p class="tab-links" onclick= "opentab('Experience')">Experience</p>
+            <p class="tab-links"onclick= "opentab('Education')">Education</p>
+            <p class="tab-links"onclick= "opentab('Hobbies')">Hobbies</p>
+        </Div>
+        <div class="tab-contents active-tab" id="skills">
+            <ul>
+                <li><span>C# </span><br>Building applications using DELPHI</li>
+                <li><span>CSS </span><br>Designing/styling programs</li>
+                <li><span>HTML </span><br>Basic HTML </li>
+                <li><span>JavaScript </span><br>Beginner</li>
+    
+            </ul>
+        </div>
+    
+        <div class="tab-contents" id="Experience">
+            <ul>
+                <li><span> 2019</span><br>Vodacom Code like a girl(CSS, HTML and JS)</li>
+                <li><span>2020-2022 </span><br>Delphi</li>
+                <li><span>2022-present </span><br>CSS, HTML, JavaScript </li>
+                
+            </ul>
+        </div>
+    
+        <div class="tab-contents" id="Education">
+            <ul>
+                <li><span>2010-2012</span><br>Wingfield Primary School</li>
+                <li><span>2013-2017 </span><br>Goeie Hoop Primary School</li>
+                <li><span>2018-2022 </span><br>Spine Road High School </li>
+                <li><span>2023-present </span><br>Younglings Africa</li>
+    
+            </ul>
+        </div>
+    
+        <div class="tab-contents" id="Hobbies">
+            <ul>
+                <li><span>Netball </span><br>Part-time netball player</li>
+                <li><span>Cooking/Baking </span><br>Been cooking and baking since 2013</li>
+                <li><span>Singing </span><br> My passion since I was a kid </li>
+                <li><span>Dancing </span><br>Occasional dancer</li>
+    
+            </ul>
+        </div>
+       </div>
+       <script> 
+       var tablinks = document.getElementsByClassName("tab-links");
+       var tabcontents = document.getElementsByClassName("tab-contents");
+      
+       function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+    
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+       }
+       </script>
+    </body>
+    
+    </html>
